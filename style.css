@@ -1,0 +1,89 @@
+    @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+    body {
+        background-color: #031D44;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    #maindiv {
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #data_section {
+        height: 400px;
+        width: 500px;
+        background-color: #02132c;
+        border-radius: 5px;
+        overflow-y: scroll;
+        display: none;
+    }
+    
+    #logo {
+        font-size: 60px;
+        color: white;
+        font-weight: lighter;
+    }
+    
+    #cityinput {
+        background-color: #F1F2EB;
+        color: #031D44;
+        font-weight: lighter;
+        font-size: 12px;
+        height: 31px;
+        width: 200px;
+        border: 0px none;
+        outline: none;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 10px;
+    }
+    
+    #searchbutton {
+        background-color: #1FA0E8;
+        color: #FDFDFD;
+        font-weight: lighter;
+        font-size: 12px;
+        height: 33px;
+        width: 100px;
+        border: 0px none;
+        border-radius: 5px;
+    }
+    
+    #dayforecast {
+        width: auto;
+        height: 75px;
+        color: #F1F2EB;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #date {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    #description {
+        font-size: 30px;
+    }
+    
+    #weatherdata {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #weathericon {
+        width: 70px;
+        height: 70px;
+        float: right;
+    }
+    
+    #searchstatus {
+        color: #FDFDFD;
+        text-align: center;
+        margin: 20px;
+    }
