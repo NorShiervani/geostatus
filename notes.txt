@@ -1,0 +1,21 @@
+https://www.youtube.com/watch?v=UuGyvCYWI3I (Pure CSS Rain Animation With Lighting)
+https://codepen.io/trixie13/pen/GNJqBJ (Cloud effect)
+https://codepen.io/mgkOV/pen/qzNegg (Sun Ray Effect CSS)
+https://pixabay.com/api/?key=15315498-9ff1536c360c66ee9d548dde0&q=g%C3%B6teborg&orientation=horizontal (pixabay api)
+https://restcountries.eu/rest/v2/alpha/se?fields=name;flag (Country code API)
+
+
+var API_KEY = '15315498-9ff1536c360c66ee9d548dde0';
+var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent('red roses');
+$.getJSON(URL, function(data){
+if (parseInt(data.totalHits) > 0)
+    $.each(data.hits, function(i, hit){ console.log(hit.pageURL); });
+else
+    console.log('No hits');
+});
+
+
+Jämför react angular:
+
+- Komponent tänket
+- Angular använder Typescript
