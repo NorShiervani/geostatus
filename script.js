@@ -54,11 +54,14 @@ $(() => {
     }
 
     function toggleDataSection(hide) {
-        $("#data-section").css("height", hide ? "0px" : "300px");
+        let newHeight = hide ? 0 : 300,
+        animDuration = 450;
+
+        $("#data-section").animate({ height: newHeight }, animDuration);
     }
 
     function displayCityBackground(city) {
-        var URL = "https://pixabay.com/api/?key=" + PIXABAY_API_KEY + "&q=" + city;
+        let URL = "https://pixabay.com/api/?key=" + PIXABAY_API_KEY + "&q=" + city;
         $.getJSON(URL, function(data) {
             if (parseInt(data.totalHits) > 0) {
                 let randomindex = Math.floor(Math.random() * (data.hits.length + 1));
