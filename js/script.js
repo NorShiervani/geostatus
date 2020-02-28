@@ -1,13 +1,6 @@
-
 $(() => {
     const WEATHERBIT_API_KEY = "732839d858ff424cbd815536e6c31d5d";
     const PIXABAY_API_KEY = "15315498-9ff1536c360c66ee9d548dde0";
-    const myEnum = {
-        "rain": toggleDataSection(true),
-        "drize": toggleDataSection(true),
-        "thunderstorm": toggleDataSection(true),
-        "snow": toggleDataSection(true)
-    };
 
     $('#cityinput').on('input', function() {
         this.setAttribute('autocorrect', 'off')
@@ -37,7 +30,7 @@ $(() => {
                 displayForecastData(apidata);
             } else {
                 toggleDataSection(true);
-                updateSearchStatus(`Couldn\'t find weather forecasts for city \"${city}\".`);
+                updateSearchStatus(`Couldn't find weather forecasts for city \"${city}\".`);
             }
         });
     }
@@ -45,7 +38,7 @@ $(() => {
     function displayForecastData(apidata) {
         toggleDataSection(false);
         $.each(apidata.data, function(i) {
-            //ES6 Destructuring
+            //ES9 Destructuring
             let {datetime, temp} = apidata.data[i];
             let {description, icon} = apidata.data[i].weather;
             let iconurl = `https://www.weatherbit.io/static/img/icons/${icon}.png`;

@@ -29,15 +29,13 @@ body {
   justify-content: center;
 }
 
-#userinput-section {
-  align-self: center;
+#logo {
+  padding-bottom: 20px;
+  padding-left: 30px;
 }
 
-#logo {
-  font-size: 60px;
-  color: white;
-  font-weight: lighter;
-  text-align: center;
+#userinput-section {
+  align-self: center;
 }
 
 #cityinput {
