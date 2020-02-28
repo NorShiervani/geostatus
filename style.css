@@ -1,118 +1,115 @@
 @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
 body {
-    font-family: "Rubik", sans-serif;
-    margin: 0;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
 }
 
 #bg-image {
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 1;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
 }
 
 #bg-color {
-    background-color: rgba(4, 29, 68, 1);
-    height: 100%;
-    z-index: 2;
+  background-color: rgba(4, 29, 68, 1);
+  height: 100%;
+  z-index: 2;
 }
 
 #maindiv {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#data-section {
-    height: 0px;
-    background-color: #02132c;
-    border-radius: 5px;
-    overflow-y: scroll;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #userinput-section {
-    align-self: center;
+  align-self: center;
 }
 
 #logo {
-    font-size: 60px;
-    color: white;
-    font-weight: lighter;
-    text-align: center;
+  font-size: 60px;
+  color: white;
+  font-weight: lighter;
+  text-align: center;
 }
 
 #cityinput {
-    background-color: #f1f2eb;
-    color: #031d44;
-    font-weight: lighter;
-    font-size: 12px;
-    height: 31px;
-    width: 200px;
-    border: 0px none;
-    outline: none;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 10px;
+  background-color: #f1f2eb;
+  color: #031d44;
+  font-weight: lighter;
+  font-size: 12px;
+  height: 31px;
+  width: 200px;
+  border: 0px none;
+  outline: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
 }
 
 #searchbutton {
-    background-color: #1fa0e8;
-    color: #fdfdfd;
-    font-weight: lighter;
-    font-size: 12px;
-    height: 33px;
-    width: 100px;
-    border: 0px none;
-    border-radius: 5px;
-}
-
-#dayforecast {
-    width: auto;
-    height: 75px;
-    color: #f1f2eb;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-#date {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-#weatherdata {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#description {
-    font-size: 30px;
-}
-
-#weathericon {
-    width: 70px;
-    height: 70px;
-    float: right;
+  background-color: #1fa0e8;
+  color: #fdfdfd;
+  font-weight: lighter;
+  font-size: 12px;
+  height: 33px;
+  width: 100px;
+  border: 0px none;
+  border-radius: 5px;
 }
 
 #searchstatus {
-    color: #fdfdfd;
-    text-align: center;
-    margin: 20px;
+  color: #fdfdfd;
+  text-align: center;
+  margin: 20px;
+}
+
+/***********************
+    Weather data
+************************/
+
+#data-section {
+  height: 0px;
+  background-color: #02132c;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+#description {
+  font-size: 30px;
+}
+
+#weathericon {
+  width: 80px;
+  height: 80px;
+  float: right;
+}
+
+#dayforecast {
+  color: #f1f2eb;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#date {
+  font-size: 15px;
+  font-weight: bold;
 }
 
 /***********************
         Media
 ************************/
 @media all and (max-width: 655px) {
-    #cityinput {
-        width: 150px;
-    }
+  #cityinput {
+    width: 150px;
+  }
 }
