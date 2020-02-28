@@ -107,3 +107,12 @@ body {
     text-align: center;
     margin: 20px;
 }
+
+/***********************
+        Media
+************************/
+@media all and (max-width: 655px) {
+    #cityinput {
+        width: 150px;
+    }
+}
