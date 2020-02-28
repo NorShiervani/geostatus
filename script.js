@@ -1,3 +1,4 @@
+
 $(() => {
     const WEATHERBIT_API_KEY = "732839d858ff424cbd815536e6c31d5d";
     const PIXABAY_API_KEY = "15315498-9ff1536c360c66ee9d548dde0";
@@ -11,6 +12,10 @@ $(() => {
     $('#cityinput').on('input', function() {
         this.setAttribute('autocorrect', 'off')
         this.setAttribute('spellcheck', false)
+    });
+
+    $("#userinput-section").on("submit", function(e) {
+        e.preventDefault();
     });
 
     $('#searchbutton').on('click', function() {
